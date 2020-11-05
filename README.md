@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <!--Name: Ajdin Fazlić
     ID: 180302025
     Project 1-->
 <html>
     <head>
         <title>My resume</title>
-        
+        <link rel="stylesheet" href="project2.css">
     </head>
     <body >
         <header>
@@ -16,8 +15,9 @@
             <button class="button"><a href = "#workandexp">Work experience and internship</a></button>
             <button class="button"><a href = "#skills">Skills</a></button>
             <button class="button"><a href = "#personalInfo">Personal info</a></button>
+            <button class="button"><a href="#contactInfo">Contact</a></button>
         </nav>
-        <img src = "picture1.jpg" alt = "My picture" width = "10%">
+        <a href="picture1.jpg"><img src = "picture1.jpg" alt = "My picture" width = "10%"></a>
         
         </header>
         
@@ -31,7 +31,7 @@
         </blockquote>
         </div>
         <div id = "personalInfo">
-            <h2>Personal info</h2>
+            <h2 id="personalInfoHeading">Personal info</h2>
             <h3>Gender</h3>
             <p>Male</p>
             <h3>Birth date</h3>
@@ -42,7 +42,7 @@
         </div>
         <div id = "education">
             <h2>Education</h2>
-            <ul>
+            <ul id="educationList">
             <li>
                 <h3>Bachelor</h3>
                     <p>Software Engineering <acronym title = "International University of Sarajevo">IUS</acronym>, Sarajevo 2018-2022, <a href = "https://www.ius.edu.ba/" target="_blank">IUS</a></p>
@@ -64,7 +64,7 @@
         
         <div id = "workandexp">
         <h2>Work experience and internship</h2>
-        <ol>
+        <ol id= "workandexpList">
              <li>
                  <p>English language instructor, <a href = "https://nativecamp.net/tutors" target="_blank">Native Camp</a>, 15/06/2018 - 01/09/2018</p>
                  <blockquote><p>I worked as an online english language instructor for people in Japan, China and South Korea. It was a very nice experinece. I got to 
@@ -88,7 +88,7 @@
         </div>
         <div id = "skills">
         <h2>Skills</h2>
-        <ol type = "A">
+        <ol type = "A" id="skillList">
             <li>
                 <p> English C1, German B1, Turkish A1</p>
             </li>
@@ -115,13 +115,14 @@
             </li>
         </ol>
         </div>
-        <footer>
-        <h2>Contact me on:</h2>
-        <h3>Phone</h3>
+        <footer id="contactInfo">
+        <p>If you wish to see Project 1 click <a href= "https://ajdin-fazlic.github.io/Web-dev-project1/">here</a></p>
+        <h2 id="footerHeading">Contact me on:</h2>
+        <h3 class="contact">Phone</h3>
         <p>+387 61/609-609</p>
-        <h3>Email</h3>
+        <h3 class="contact">Email</h3>
         <p><a href= "mailto: ajdin.fazlic@gmail.com" target="_blank">ajdin.fazlic@gmail.com</a></p>   
-        <h3>Social media</h3>
+        <h3 class="contact">Social media</h3>
             <a href = "https://www.facebook.com/ajdin.fazlic.9/" target="_blank">
                 <img src = "facebook_icon.png" alt = "Facebook icon"></a>
             <a href = "https://www.instagram.com/ajdinfazlic/" target="_blank">
@@ -131,3 +132,207 @@
         </footer>
     </body>
 </html>
+
+
+/* 
+    Name: Ajdin Fazlic
+    Course: CS412
+    Assignment: Project 2- CSS
+    Due Date: 5.11.2020.
+    Purpose: The purpose of this .css file is to style my resume page for my project*/
+
+body{
+    background-color: rgb(25, 97, 174);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(175, 234, 220);
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header img{
+    margin-bottom: 3em;
+    border: solid black;
+}
+
+#navigationBar{
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+#navigationBar a{
+    float: left;
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navigationBar a:hover{
+    color: rgb(25, 97, 174);
+}
+
+blockquote, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto";
+    color: white;
+}
+
+
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.button{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#bio{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-right: 0em;
+    margin-bottom: 4em;
+    margin-left: 0em;
+    background-color:  rgb(138, 186, 221);
+    text-align: center;
+    border-radius: 25%;
+}
+
+#bio h2{
+    text-align: center;
+}
+
+
+#personalInfo{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-right: 0em;
+    margin-bottom: 2em;
+    margin-left: 0em;
+    background-color: rgb(138, 186, 221);
+    text-align: center;
+    border-radius: 25%;
+}
+
+#personalInfo  h3{
+    text-align: center;
+}
+
+#personalInfoHeading{
+    text-align: center;
+}
+
+#containers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#education{
+    background-color: rgb(138, 186, 221);
+    margin-left: 30em;
+    margin-right: 5em;
+    padding: 5px 0px;
+    width: 50%;
+    
+}
+
+#education h2{
+    margin-left: 2em;
+}
+
+#educationList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+#workandexp{
+    background-color: rgb(138, 186, 221);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 5px 0px;
+}
+
+#workandexpList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+#workandexp h2{
+    margin-left: 2em;
+}
+
+#skills{
+    background-color: rgb(138, 186, 221);
+    margin-top: 4em;
+    margin-left: 45em;
+    margin-bottom: 4em;
+    margin-right: 2em;
+    padding: 5px 0px;
+    width: 25%;
+    border-radius: 25%;
+}
+
+#skills h2{
+    margin-left: 2em;
+}
+
+#skillList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(175, 234, 220);
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 5px 0px;
+}
+
+footer, #footerHeading, .contact{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+}
