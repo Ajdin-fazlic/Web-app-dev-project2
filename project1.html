@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>My resume</title>
-        
+        <link rel="stylesheet" href="project2.css">
     </head>
     <body >
         <header>
@@ -16,8 +16,9 @@
             <button class="button"><a href = "#workandexp">Work experience and internship</a></button>
             <button class="button"><a href = "#skills">Skills</a></button>
             <button class="button"><a href = "#personalInfo">Personal info</a></button>
+            <button class="button"><a href="#contactInfo">Contact</a></button>
         </nav>
-        <img src = "picture1.jpg" alt = "My picture" width = "10%">
+        <a href="picture1.jpg"><img src = "picture1.jpg" alt = "My picture" width = "10%"></a>
         
         </header>
         
@@ -31,7 +32,7 @@
         </blockquote>
         </div>
         <div id = "personalInfo">
-            <h2>Personal info</h2>
+            <h2 id="personalInfoHeading">Personal info</h2>
             <h3>Gender</h3>
             <p>Male</p>
             <h3>Birth date</h3>
@@ -42,7 +43,7 @@
         </div>
         <div id = "education">
             <h2>Education</h2>
-            <ul>
+            <ul id="educationList">
             <li>
                 <h3>Bachelor</h3>
                     <p>Software Engineering <acronym title = "International University of Sarajevo">IUS</acronym>, Sarajevo 2018-2022, <a href = "https://www.ius.edu.ba/" target="_blank">IUS</a></p>
@@ -64,7 +65,7 @@
         
         <div id = "workandexp">
         <h2>Work experience and internship</h2>
-        <ol>
+        <ol id= "workandexpList">
              <li>
                  <p>English language instructor, <a href = "https://nativecamp.net/tutors" target="_blank">Native Camp</a>, 15/06/2018 - 01/09/2018</p>
                  <blockquote><p>I worked as an online english language instructor for people in Japan, China and South Korea. It was a very nice experinece. I got to 
@@ -88,7 +89,7 @@
         </div>
         <div id = "skills">
         <h2>Skills</h2>
-        <ol type = "A">
+        <ol type = "A" id="skillList">
             <li>
                 <p> English C1, German B1, Turkish A1</p>
             </li>
@@ -115,13 +116,14 @@
             </li>
         </ol>
         </div>
-        <footer>
-        <h2>Contact me on:</h2>
-        <h3>Phone</h3>
+        <footer id="contactInfo">
+        <p>If you wish to see Project 1 click <a href= "https://ajdin-fazlic.github.io/Web-dev-project1/">here</a></p>
+        <h2 id="footerHeading">Contact me on:</h2>
+        <h3 class="contact">Phone</h3>
         <p>+387 61/609-609</p>
-        <h3>Email</h3>
+        <h3 class="contact">Email</h3>
         <p><a href= "mailto: ajdin.fazlic@gmail.com" target="_blank">ajdin.fazlic@gmail.com</a></p>   
-        <h3>Social media</h3>
+        <h3 class="contact">Social media</h3>
             <a href = "https://www.facebook.com/ajdin.fazlic.9/" target="_blank">
                 <img src = "facebook_icon.png" alt = "Facebook icon"></a>
             <a href = "https://www.instagram.com/ajdinfazlic/" target="_blank">
