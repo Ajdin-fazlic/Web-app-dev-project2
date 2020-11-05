@@ -1,0 +1,202 @@
+/* 
+    Name: Ajdin Fazlic
+    Course: CS412
+    Assignment: Project 2- CSS
+    Due Date: 5.11.2020.
+    Purpose: The purpose of this .css file is to style my resume page for my project*/
+
+body{
+    background-color: rgb(25, 97, 174);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(175, 234, 220);
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header img{
+    margin-bottom: 3em;
+    border: solid black;
+}
+
+#navigationBar{
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+#navigationBar a{
+    float: left;
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navigationBar a:hover{
+    color: rgb(25, 97, 174);
+}
+
+blockquote, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto";
+    color: white;
+}
+
+
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.button{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#bio{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-right: 0em;
+    margin-bottom: 4em;
+    margin-left: 0em;
+    background-color:  rgb(138, 186, 221);
+    text-align: center;
+    border-radius: 25%;
+}
+
+#bio h2{
+    text-align: center;
+}
+
+
+#personalInfo{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-right: 0em;
+    margin-bottom: 2em;
+    margin-left: 0em;
+    background-color: rgb(138, 186, 221);
+    text-align: center;
+    border-radius: 25%;
+}
+
+#personalInfo  h3{
+    text-align: center;
+}
+
+#personalInfoHeading{
+    text-align: center;
+}
+
+#containers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#education{
+    background-color: rgb(138, 186, 221);
+    margin-left: 30em;
+    margin-right: 5em;
+    padding: 5px 0px;
+    width: 50%;
+    
+}
+
+#education h2{
+    margin-left: 2em;
+}
+
+#educationList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+#workandexp{
+    background-color: rgb(138, 186, 221);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 5px 0px;
+}
+
+#workandexpList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+#workandexp h2{
+    margin-left: 2em;
+}
+
+#skills{
+    background-color: rgb(138, 186, 221);
+    margin-top: 4em;
+    margin-left: 45em;
+    margin-bottom: 4em;
+    margin-right: 2em;
+    padding: 5px 0px;
+    width: 25%;
+    border-radius: 25%;
+}
+
+#skills h2{
+    margin-left: 2em;
+}
+
+#skillList{
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(175, 234, 220);
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 5px 0px;
+}
+
+footer, #footerHeading, .contact{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+}
